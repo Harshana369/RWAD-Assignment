@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sticky position</title>
+    <link href="Css/normalize.css "rel="stylesheet">
+    <style>
+        body> section:nth-child(1){
+            height: 100vh;
+            background: white;
+        }
+        body>section:nth-child(2){
+            height: 100vh;
+            background: #16e1d9;
+        }
+        body>section:nth-child(3){
+            height: 100vh;
+            background: #2c3131;
+        }
+        body>section:nth-child(4){
+            height: 100vh;
+            background: red;
+        }
+
+        section:nth-child(1)>div{
+            width: auto;
+            height: 50px;
+            background: red;
+            position: sticky;
+            top:0;
+        }
+        section:nth-child(1)>article>h1{
+            width : max-content;
+            height : max-content;
+            position: absolute;
+            font-size: 5em;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section:nth-child(1)>div>h1{
+            top:17px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            margin: auto;
+            font-size: 1em;
+            color: white;
+        }
+
+        section:nth-child(2)>div{
+            width: auto;
+            height: 50px;
+            background: #002543;
+            position: sticky;
+            top:0;
+        }
+        section:nth-child(2)>div>h1{
+            top:17px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            margin: auto;
+            font-size: 1em;
+            color: white;
+        }
+        section:nth-child(2)>article>h1{
+            width : max-content;
+            height : max-content;
+            position: absolute;
+            font-size: 5em;
+            left: 0;
+            right: 0;
+            top: 200%;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(3)>div{
+            width: auto;
+            height: 50px;
+            background: #040302;
+            position: sticky;
+            top:0;
+        }
+        section:nth-child(3)>div>h1{
+            top:17px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            margin: auto;
+            font-size: 1em;
+            color: white;
+        }
+        section:nth-child(3)>article>h1{
+            width : max-content;
+            height : max-content;
+            position: absolute;
+            font-size: 5em;
+            left: 0;
+            right: 0;
+            top: 400%;
+            bottom: 0;
+            margin: auto;
+        }
+        section:nth-child(4)>article>h1{
+            width : max-content;
+            height : max-content;
+            position: absolute;
+            font-size: 5em;
+            left: 0;
+            right: 0;
+            top: 400%;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(4)>div{
+            width: auto;
+            height: 50px;
+            background: #890000;
+            position: sticky;
+            top:0;
+        }
+        section:nth-child(4)>div>h1{
+            top:17px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            margin: auto;
+            font-size: 1em;
+            color: white;
+        }
+        section:nth-child(4)>article>h1{
+            width : max-content;
+            height : max-content;
+            position: absolute;
+            font-size: 5em;
+            left: 0;
+            right: 0;
+            top: 600%;
+            bottom: 0;
+            margin: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <h1>Card 1</h1>
+    </div>
+    <article>
+        <h1>Hello</h1>
+    </article>
+</section>
+
+
+<section>
+    <div>
+        <h1>Card 2</h1>
+    </div>
+    <article>
+        <h1>How</h1>
+    </article>
+</section>
+
+
+<section>
+    <div>
+        <h1>Card 3</h1>
+    </div>
+    <article>
+        <h1>Are</h1>
+    </article>
+</section>
+
+
+<section>
+    <div>
+        <h1>Card 4</h1>
+    </div>
+    <article>
+        <h1>You..?</h1>
+    </article>
+</section>
+</body>
+</html>
